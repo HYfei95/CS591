@@ -5,24 +5,24 @@ const operator = oper => {
             break;
     };
     switch (oper) {
-        case '+':
-            return (left, right) => left + right;
+        case '-':
+            return (left, right) => left - right;
             break;
     };
     switch (oper) {
-        case '+':
-            return (left, right) => left + right;
+        case '*':
+            return (left, right) => left * right;
             break;
     };
     switch (oper) {
-        case '+':
-            return (left, right) => left + right;
+        case '/':
+            return (left, right) => left / right;
             break;
     };
 };
 
 
-const expression = '4+2';
+const expression = '5*7';
 let array = expression.split('');
 const oper = array[1];
 const left = parseInt(array[0]);
