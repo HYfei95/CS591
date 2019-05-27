@@ -1,16 +1,15 @@
-const func = (str, function1) => {
-    return function1(str);
+const func = (string, function1) => {
+    return function1(string);
 };
 
-console.log(func(`supercalifragilisticexpialidocious`, str => str.split(/(?=c)/g)));
+console.log(func(`supercalifragilisticexpialidocious`, string => string.split(/(?=c)/g)));
 
 
-console.log(func(`supercalifragilisticexpialidocious`, str=> {
-    var result = {
-        originalString: str,
-        modifiedString: str.replace(/a/g, 'A'),
-        numberReplaced: (str.match(/a/g)||[]).length,
-        length: str.length
+console.log(func(`supercalifragilisticexpialidocious`, string=> {
+    return {
+        originalString: string,
+        modifiedString: string.replace(/a/g, 'A'),
+        numberReplaced: (string.match(/a/g) || []).length,
+        length: string.length,
     };
-    return result;
 }));
