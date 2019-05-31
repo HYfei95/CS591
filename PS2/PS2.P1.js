@@ -1,18 +1,28 @@
 function* fibs () {
     let [val1, val2, result] = [0, 1, 0];
     while (true) {
+        yield result;
         result = val1+val2;
         val1 = val2;
         val2 = result;
-        yield result;
     }
 }
 
 
-
-//Get a few fibs
-myFibs = fibs();
-let count = 0;
-while (count --> 0) {
-    console.log(myFibs.next().value)
+function* evenFib(num){
+    let myFib = fibs();
+    while(true){
+         num = myFib.next().value;
+        if(num === 0 || num%2 === 0){
+            yield num;
+        }
+    }
 }
+
+let result = evenFib();
+const printRes = count => {
+    while (count-- > 0) {
+        console.log(result.next().value)
+    }
+};
+printRes(15);
