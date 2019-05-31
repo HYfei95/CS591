@@ -6,7 +6,7 @@ function* fibs (x) {
         result = val1+val2;
         val1 = val2;
         val2 = result;
-        if (result > Number.MAX_SAFE_INTEGER) throw new Error()
+        if (result > Number.MAX_SAFE_INTEGER) throw new Error();
         yield result
     }
 }
@@ -28,4 +28,4 @@ const print = count => {
         console.log(result.next().value)
     }
 };
-print(15);
+print(5);
