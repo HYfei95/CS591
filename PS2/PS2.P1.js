@@ -20,9 +20,9 @@ function* evenFib(num){
 }
 
 let result = evenFib();
-const printRes = count => {
+const print = count => {
     while (count-- > 0) {
         console.log(result.next().value)
     }
 };
-printRes(15);
+print(15);
