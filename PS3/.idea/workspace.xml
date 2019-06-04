@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3209475b-a9c6-454b-ab25-90d8d3fa4197" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/ps3Router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/result.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -158,12 +156,12 @@
       <workItem from="1559573370226" duration="1150000" />
       <workItem from="1559575720719" duration="679000" />
       <workItem from="1559578678759" duration="321000" />
-      <workItem from="1559579022397" duration="4554000" />
+      <workItem from="1559579022397" duration="4694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7187000" />
+    <option name="totallyTimeSpent" value="7327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="931" height="777" extended-state="0" />
