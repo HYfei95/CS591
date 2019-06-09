@@ -3,8 +3,8 @@ const router = express.Router();
 const request = require('require-promise');
 const configs = require('../config/currency');
 
-
-const options = {
+router.get('/', function (req, res, next) {
+    const options = {
     method: 'GET',
     url: configs.url,
     qs:
@@ -16,16 +16,15 @@ const options = {
         'User-Agent': 'Request-Promise'
     },
     json: true
-};
+    };
 
-console.log(configs.url);
-console.log(configs.access_key);
-request(options)
-    .then(function(res) {
-        console.log(res.quotes)
-    })
-    .catch(function (err) {
-        console.log(`ERROR ${err}`)
-    });
 
+    request(options)
+        .then(function (data) {
+            res.render('ps4', {data});
+        })
+        .catch(function (err) {
+            console.log(`ERROR ${err}`)
+        });
+});
 module.exports = router;
