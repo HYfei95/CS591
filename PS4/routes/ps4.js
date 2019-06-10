@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const request = require('require-promise');
+const request = require('request-promise');
 const configs = require('../config/currency');
 
 router.get('/', function (req, res, next) {

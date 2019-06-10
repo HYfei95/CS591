@@ -13,6 +13,8 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "^2.0.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
     "request-promise-lite": "^0.15.0",
     "require": "^2.4.20",
     "require-promise": "^1.0.1"
