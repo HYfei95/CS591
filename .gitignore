@@ -64,3 +64,4 @@ typings/
 #webstorm stuff
 .idea/
 
+config/

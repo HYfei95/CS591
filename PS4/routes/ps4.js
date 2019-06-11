@@ -21,7 +21,7 @@ router.get('/', function (req, res, next) {
 
     request(options)
         .then(function (data) {
-            res.render('ps4', {string:data.quotes});
+            res.render('ps4', {data: data});
         })
         .catch(function (err) {
             console.log(`ERROR ${err}`)
