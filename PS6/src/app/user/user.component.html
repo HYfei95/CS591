@@ -1,0 +1,9 @@
+<div style="text-align:center">
+
+<div *ngIf="selectedCurrency">
+  <h3>Exchange rate for {{selectedCurrency.source}} to</h3>
+  <input type="text" [(ngModel)]="selectedCurrency.target">
+  <input type="text" [(ngModel)]="selectedCurrency.quotes.USDCAD">
+</div>
+
+</div>
