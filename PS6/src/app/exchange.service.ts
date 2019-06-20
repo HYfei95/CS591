@@ -10,10 +10,10 @@ export class ExchangeService {
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
-  Endpoint = 'http://localhost:3000/ps4';
+  Endpoint = 'http://localhost:3000/ps4/cur';
 
   getRate(): Observable<model[]> {
-    return this.httpClient.get<model[]>(this.Endpoint);
+    return this.httpClient.get<model[]>(this.Endpoint );
   }
 
 

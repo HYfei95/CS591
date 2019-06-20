@@ -1,4 +1,3 @@
-// tslint:disable-next-line:class-name
 export class model {
 
   success: boolean;
@@ -7,5 +6,5 @@ export class model {
   timestamp: number;
   source: string;
   target: string;
-  quotes: any;
+  quotes: number;
 }

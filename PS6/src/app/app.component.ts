@@ -14,20 +14,18 @@ export class AppComponent {
 
   getRate(): void {
     this.exchangeService.getRate()
-      .subscribe(currenies => {
-        this.currencies = currenies;
+      .subscribe(data => {
+        this.currencies = data;
         console.log(`exchange rate ${this.currencies}`);
       });
+
   }
 
   displayRate(currency: model) {
     this.selectedCurrency = currency;
   }
-
   constructor(private exchangeService: ExchangeService) {
   }
-
-  // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
     this.getRate();
   }
